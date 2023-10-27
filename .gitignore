@@ -1,0 +1,70 @@
+# Carpeta de binarios generados
+/bin/
+/obj/
+
+# Archivos generados por Visual Studio
+.vscode/
+.vs/
+
+# Dependencias y paquetes de NuGet
+/packages/
+*.nupkg
+**/bin
+**/obj
+
+# Carpetas específicas de Android
+/Droid/bin/
+/Droid/obj/
+
+# Carpetas específicas de iOS
+/iOS/bin/
+/iOS/obj/
+
+# Carpeta específica de macOS
+/MacCatalyst/bin/
+/MacCatalyst/obj/
+
+# Archivos de usuario y configuraciones locales
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+*.userprefs
+
+# Archivos de caché de ReSharper
+_ReSharper*/
+
+# Carpeta específica de JetBrains Rider
+.idea/
+
+# Archivos de compilación y log
+bin/
+obj/
+log/
+
+# Cache y archivos temporales
+[Cc]ache/
+[Tt]emp/
+.vs2017/
+.vs2019/
+logs/
+
+# Logs y archivos de debugging
+TestResult.xml
+TestResults/
+[Bb]in/
+[Oo]bj/
+
+# Archivos de respaldo
+[Bb]ackup/
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# Visual Studio 2022 archivos de usuario
+.vs2022/
+
+# Carpeta de archivos temporales de Rider
+.idea/
+
+# Carpeta de archivos temporales de Visual Studio Code
+.vscode/
