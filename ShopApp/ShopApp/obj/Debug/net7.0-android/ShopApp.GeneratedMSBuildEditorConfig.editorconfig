@@ -26,12 +26,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[E:/Maui/ComShopApp/ShopApp/ShopApp/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
 [E:/Maui/ComShopApp/ShopApp/ShopApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Resources.Styles.Colors.xaml
@@ -43,3 +37,39 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/CategoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.CategoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CategoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CategoriesPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/ClientsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.ClientsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ClientsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ClientsPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/ProductDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.ProductDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductDetailPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/ProductsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.ProductsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductsPage.xaml
