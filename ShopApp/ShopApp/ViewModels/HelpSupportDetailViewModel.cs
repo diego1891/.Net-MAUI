@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ShopApp.DataAccess;
+using ShopApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +14,8 @@ namespace ShopApp.ViewModels;
 
 public partial class HelpSupportDetailViewModel : ViewModelGlobal, IQueryAttributable
 {
+    private readonly IConnectivity _connectivity;
+
     [ObservableProperty]
     private ObservableCollection<Compra> compras = new ObservableCollection<Compra>();
 
@@ -28,25 +31,51 @@ public partial class HelpSupportDetailViewModel : ViewModelGlobal, IQueryAttribu
     [ObservableProperty]
     private int cantidad;
 
-    public HelpSupportDetailViewModel()
+    private CompraService _compraService;
+    public HelpSupportDetailViewModel(IConnectivity connectivity, CompraService compraService)
     {
         var database = new ShopDbContext();
         Products = new ObservableCollection<Product>(database.Products);
+
         AddCommand = new Command(() =>
         {
             var compra = new Compra(
-                ClienteId, 
-                ProductoSeleccionado.Id, 
+                ClienteId,
+                ProductoSeleccionado.Id,
                 Cantidad,
                 ProductoSeleccionado.Nombre,
                 ProductoSeleccionado.Precio,
-                ProductoSeleccionado.Precio*Cantidad);
+                ProductoSeleccionado.Precio * Cantidad);
             Compras.Add(compra);
         },
         () => true
         );
+        _connectivity = connectivity;
+        _connectivity.ConnectivityChanged += _connectivity_ConnectivityChanged;
+        _compraService = compraService;
     }
 
+    [RelayCommand(CanExecute = nameof(StatusConnection))]
+    private async Task EnviarCompra()
+    {
+        var resultado = await _compraService.EnviarData(Compras);
+        if (resultado)
+        {
+            await Shell.Current.DisplayAlert("Mensaje", "Se enviaron las compras al servidor backend", "Aceptar");
+        }
+    }
+
+    private void _connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+    {
+        EnviarCompraCommand.NotifyCanExecuteChanged();
+    }
+
+    private bool StatusConnection()
+    {
+        return _connectivity.NetworkAccess == NetworkAccess.Internet ? true : false;
+    }
+
+    
     public ICommand AddCommand { get; set; }
 
     public void ApplyQueryAttributes(IDictionary<string, object> query)

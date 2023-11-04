@@ -20,6 +20,8 @@ namespace ShopApp
                 });
 
             builder.Services.AddSingleton<INavegacionService, NavegacionService>();
+            builder.Services.AddSingleton<CompraService>();
+
             builder.Services.AddTransient<HelpSupportViewModel>();
             builder.Services.AddTransient<HelpSupportPage>();
             builder.Services.AddTransient<HelpSupportDetailViewModel>();
@@ -30,6 +32,9 @@ namespace ShopApp
             builder.Services.AddTransient<ProductsPage>();
             builder.Services.AddTransient<ProductDetailsViewModel>();
             builder.Services.AddTransient<ProductDetailPage>();
+
+            builder.Services.AddSingleton(Connectivity.Current);
+            builder.Services.AddSingleton<HttpClient>();
 
             var dbContext = new ShopDbContext();
             dbContext.Database.EnsureCreated();

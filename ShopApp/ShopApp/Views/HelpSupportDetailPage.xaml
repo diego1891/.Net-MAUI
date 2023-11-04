@@ -6,7 +6,7 @@
              Title="HelpSupportDetailPage">
 
 
-    <Grid RowDefinitions="*,Auto,*">
+    <FlexLayout Direction="Column" JustifyContent="Center" AlignContent="Center">
         <Grid ColumnDefinitions="*,*">
 
             <VerticalStackLayout>
@@ -55,6 +55,7 @@
         <CollectionView 
                 Grid.Row="2"
                 ItemsSource="{Binding Compras}"
+                FlexLayout.Grow="1"
         >
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -100,7 +101,13 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-    </Grid>
+        <Button 
+            Grid.Row="3"
+            Text="Enviar al Servidor"
+            Command="{Binding EnviarCompraCommand}"
+            />
+
+    </FlexLayout>
 
 
 
