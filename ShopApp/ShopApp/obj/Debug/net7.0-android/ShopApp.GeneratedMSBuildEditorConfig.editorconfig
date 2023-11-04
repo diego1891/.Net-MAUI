@@ -85,3 +85,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.ProductsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProductsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProductsPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/ResumenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.ResumenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ResumenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ResumenPage.xaml

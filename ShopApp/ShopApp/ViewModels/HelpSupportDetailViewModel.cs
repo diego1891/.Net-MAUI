@@ -32,7 +32,13 @@ public partial class HelpSupportDetailViewModel : ViewModelGlobal, IQueryAttribu
     private int cantidad;
 
     private CompraService _compraService;
-    public HelpSupportDetailViewModel(IConnectivity connectivity, CompraService compraService)
+
+    private readonly ShopOutDbContext _outDbContext;
+
+    public HelpSupportDetailViewModel(
+        IConnectivity connectivity, 
+        CompraService compraService,
+        ShopOutDbContext outDbContext)
     {
         var database = new ShopDbContext();
         Products = new ObservableCollection<Product>(database.Products);
@@ -53,16 +59,26 @@ public partial class HelpSupportDetailViewModel : ViewModelGlobal, IQueryAttribu
         _connectivity = connectivity;
         _connectivity.ConnectivityChanged += _connectivity_ConnectivityChanged;
         _compraService = compraService;
+        _outDbContext = outDbContext;
     }
 
     [RelayCommand(CanExecute = nameof(StatusConnection))]
     private async Task EnviarCompra()
     {
-        var resultado = await _compraService.EnviarData(Compras);
-        if (resultado)
+
+        _outDbContext.Database.EnsureCreated();
+        
+        foreach (var compra in Compras)
         {
-            await Shell.Current.DisplayAlert("Mensaje", "Se enviaron las compras al servidor backend", "Aceptar");
+            _outDbContext.Compras.Add(new CompraItem(
+                compra.ClientId,
+                compra.ProductId,
+                compra.Cantidad,
+                compra.ProductoPrecio
+                ));
         }
+        await _outDbContext.SaveChangesAsync();
+        await Shell.Current.DisplayAlert("Mensaje", "Se almacenaron en la base de datos", "Aceptar");
     }
 
     private void _connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
