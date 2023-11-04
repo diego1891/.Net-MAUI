@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JlW6Bd7j2ZzntSXlHiFu02stOkRZoex2MIE9XVzlzMEg6qI30RpQKqB97yEOPzOUNo1XjP3ACf6kYXgZ9ud7GA==",
+  "dgSpecHash": "YHoKkTWVOuv82y8EPYr5qEM1/Jsd9WUidSvo9prqasD95oaPov5PmCvtHsiE/yt+GYtqHD/6t4k10/rek8LszA==",
   "success": true,
   "projectFilePath": "E:\\Maui\\ComShopApp\\ShopApp\\ShopApp\\ShopApp.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.96\\microsoft.maui.graphics.win2d.winui.desktop.7.0.96.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",

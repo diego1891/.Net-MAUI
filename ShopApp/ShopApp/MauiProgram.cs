@@ -22,6 +22,7 @@ namespace ShopApp
             builder.Services.AddSingleton<INavegacionService, NavegacionService>();
             builder.Services.AddSingleton<CompraService>();
             builder.Services.AddSingleton<IDatabaseRutaService, DatabaseRutaService>();
+            builder.Services.AddSingleton<SecurityService>();
 
             builder.Services.AddTransient<HelpSupportViewModel>();
             builder.Services.AddTransient<HelpSupportPage>();
@@ -35,6 +36,8 @@ namespace ShopApp
             builder.Services.AddTransient<ResumenPage>();
             builder.Services.AddTransient<ProductDetailsViewModel>();
             builder.Services.AddTransient<ProductDetailPage>();
+            builder.Services.AddTransient<LoginViewModel>();
+            builder.Services.AddTransient<LoginPage>(); 
 
             builder.Services.AddSingleton(Connectivity.Current);
             builder.Services.AddSingleton<HttpClient>();
