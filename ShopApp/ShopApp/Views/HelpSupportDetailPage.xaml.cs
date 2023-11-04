@@ -1,6 +1,7 @@
 using ShopApp;
 using ShopApp.DataAccess;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace ShopApp.Views;
 
@@ -14,7 +15,10 @@ public partial class HelpSupportDetailPage : ContentPage, IQueryAttributable
     public void ApplyQueryAttributes(IDictionary<string, object> query)
     {
         Title = $"Cliente : {query["id"]}";
+		var clientId = int.Parse(query["id"].ToString()) ;
+		(BindingContext as HelpSupportDetailData).ClienteId = clientId;
     }
+
 }
 
 public class HelpSupportDetailData : BindingUtilObjects
@@ -25,9 +29,42 @@ public class HelpSupportDetailData : BindingUtilObjects
     {
 		var database = new ShopDbContext();
 		Products= new ObservableCollection<Product>(database.Products);
+		AddCommand = new Command(	() =>
+		{
+			var compra = new Compra(ClienteId, ProductoSeleccionado.Id, Cantidad);
+			Compras.Add(compra);
+		},
+		() => true
+		);
     }
 
-    public  ObservableCollection<Product> Products
+	public ICommand AddCommand { get; set; }
+
+	private ObservableCollection<Compra> _compras = new ObservableCollection<Compra>();
+
+	public ObservableCollection<Compra> Compras
+	{
+		get { return _compras ; }
+		set {
+            if (Compras != value)
+            {
+				_compras = value;
+				RaisePropertyChanged();
+            }
+        }
+	}
+
+
+	private int _clienteId;
+
+	public int ClienteId
+	{
+		get { return _clienteId; }
+		set { _clienteId = value; }
+	}
+
+
+	public  ObservableCollection<Product> Products
 	{
 		get { return _products; }
 		set
