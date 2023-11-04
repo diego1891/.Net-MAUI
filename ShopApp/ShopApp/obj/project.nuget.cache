@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/ANky8KGasNaIk62/bNv3GKkkcWPGk9ILvlVrx/I+UJ7msrL4Q41xBdgGfXb6p6qrStiyEaXPt3NCJrqHmGgVg==",
+  "dgSpecHash": "NxXvMI4ZEx8AkkKREpv6e2MtTGadZzS9I9yLVSmzHQ3Hvb/uuF8RDiozk84/zqQXZjqYcl2cZvygkpZc5Zy8eg==",
   "success": true,
   "projectFilePath": "E:\\Maui\\ComShopApp\\ShopApp\\ShopApp\\ShopApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Diego\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",

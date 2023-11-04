@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using ShopApp.DataAccess;
+using ShopApp.Services;
+using ShopApp.ViewModels;
 using ShopApp.Views;
 
 namespace ShopApp
@@ -17,12 +19,20 @@ namespace ShopApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton<INavegacionService, NavegacionService>();
+            builder.Services.AddTransient<HelpSupportViewModel>();
+            builder.Services.AddTransient<HelpSupportPage>();
+            builder.Services.AddTransient<HelpSupportDetailViewModel>();
+            builder.Services.AddTransient<HelpSupportDetailPage>();
+
             var dbContext = new ShopDbContext();
             dbContext.Database.EnsureCreated();
             dbContext.Dispose();
 
             Routing.RegisterRoute(nameof(ProductDetailPage), typeof(ProductDetailPage));
             Routing.RegisterRoute(nameof(HelpSupportDetailPage), typeof(HelpSupportDetailPage));
+
+
 
 #if DEBUG
 		builder.Logging.AddDebug();
