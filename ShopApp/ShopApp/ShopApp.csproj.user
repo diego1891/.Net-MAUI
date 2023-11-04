@@ -20,6 +20,12 @@
     <MauiXaml Update="Views\ClientsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\HelpSupportDetailPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\HelpSupportPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\MainPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

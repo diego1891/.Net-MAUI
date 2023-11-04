@@ -22,6 +22,7 @@ namespace ShopApp
             dbContext.Dispose();
 
             Routing.RegisterRoute(nameof(ProductDetailPage), typeof(ProductDetailPage));
+            Routing.RegisterRoute(nameof(HelpSupportDetailPage), typeof(HelpSupportDetailPage));
 
 #if DEBUG
 		builder.Logging.AddDebug();
