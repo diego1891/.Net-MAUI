@@ -24,6 +24,12 @@ namespace ShopApp
             builder.Services.AddTransient<HelpSupportPage>();
             builder.Services.AddTransient<HelpSupportDetailViewModel>();
             builder.Services.AddTransient<HelpSupportDetailPage>();
+            builder.Services.AddTransient<ClientsViewModel>();
+            builder.Services.AddTransient<ClientsPage>();
+            builder.Services.AddTransient<ProductsViewModel>();
+            builder.Services.AddTransient<ProductsPage>();
+            builder.Services.AddTransient<ProductDetailsViewModel>();
+            builder.Services.AddTransient<ProductDetailPage>();
 
             var dbContext = new ShopDbContext();
             dbContext.Database.EnsureCreated();
