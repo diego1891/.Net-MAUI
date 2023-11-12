@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.AboutPage.xa
 build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
 
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/BookmarkPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.BookmarkPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BookmarkPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BookmarkPage.xaml
+
 [E:/Maui/ComShopApp/ShopApp/ShopApp/Views/CategoriesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.CategoriesPage.xaml
@@ -63,6 +69,24 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.HelpSupportPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HelpSupportPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HelpSupportPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/InmuebleDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.InmuebleDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InmuebleDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InmuebleDetailPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/InmuebleListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.InmuebleListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InmuebleListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InmuebleListPage.xaml
 
 [E:/Maui/ComShopApp/ShopApp/ShopApp/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -93,3 +117,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.ResumenPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ResumenPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ResumenPage.xaml
+
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml

@@ -14,6 +14,9 @@
     <MauiXaml Update="AppShell.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\BookmarkPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\CategoriesPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -24,6 +27,15 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\HelpSupportPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\InmuebleDetailPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\InmuebleListPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\LoginPage.xaml">
@@ -51,6 +63,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\ResumenPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\SettingsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
