@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "q+0Zd4URWcUm3LgFb5FGnjDchfxduWi6d26cjkIrEaSjOLa32rBCbKDN1c/yG/BKk3E0fjNMBZ1u/5xRKMM7/w==",
+  "dgSpecHash": "KoWmg/OBEATnaegKYJbTxlBeNL7FaEUvQ1CE6vLoLPMDQec6nV1B0DMS9KeyU9aSTTeDzHPWg/sjvbSzmwMonA==",
   "success": true,
   "projectFilePath": "E:\\Maui\\ComShopApp\\ShopApp\\ShopApp\\ShopApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Diego\\.nuget\\packages\\communitytoolkit.maui\\6.1.0\\communitytoolkit.maui.6.1.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\communitytoolkit.maui.core\\6.1.0\\communitytoolkit.maui.core.6.1.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.13\\microsoft.data.sqlite.core.7.0.13.nupkg.sha512",
@@ -49,6 +51,7 @@
     "C:\\Users\\Diego\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\system.speech\\7.0.0\\system.speech.7.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",

@@ -80,6 +80,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.HomePage.xam
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
 
+[E:/Maui/ComShopApp/ShopApp/ShopApp/Views/InmuebleBusquedaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.InmuebleBusquedaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InmuebleBusquedaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InmuebleBusquedaPage.xaml
+
 [E:/Maui/ComShopApp/ShopApp/ShopApp/Views/InmuebleDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopApp.Views.InmuebleDetailPage.xaml

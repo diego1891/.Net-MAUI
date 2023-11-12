@@ -34,7 +34,7 @@
                         />
                 </HorizontalStackLayout>
                 <Frame.GestureRecognizers>
-                    <TapGestureRecognizer />
+                    <TapGestureRecognizer Command="{Binding TapBusquedaInmueblesCommand}"/>
                 </Frame.GestureRecognizers>
             </Frame>
 
